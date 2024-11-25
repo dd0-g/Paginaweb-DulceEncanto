@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dulce Encanto</title>
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+    
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+            
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <script defer src="script.js"></script>
+
+</head>
+<body>
+    <header>
+        <input type="checkbox" name="" id="toggler">
+        <label for="toggler" class="fas fa-bars"></label>
+
+        <a href="index.html" class="logo">Dulce Encanto</a>
+        <nav class="navbar">
+            <a class="active" href="index.html">Home</a>
+            <a href="productos.html">Productos</a>
+            <a href="index.html.#nosotros">Nosotros</a>
+            <a href="index.html.#review">Review</a>
+            <a href="index.html.#contacto">Contacto </a>
+        </nav>
+
+        <div class="icons">
+            <a href="#" class="fas fa-search" id="search-icon"></a> 
+            <a href="favorito.html" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-user" id="login-btn"></a>
+            <a href="#" class="fas fa-shopping-cart"></a>
+        </div>
+
+        <div class="shopping-cart">
+            <h2>Carrito de Compra</h2>
+        
+            <hr class="divider">
+            <!-- Aquí se llenará el carrito dinámicamente -->
+
+
+            <div class="total"> Total : S/0.00</div>
+
+            <div class="button-container">
+                <a href="carrito.html" class="btn">Ver Carrito</a>
+                <a href="checkout.html" class="btn">Checkout</a>
+            </div>
+        </div>
+
+        <form action="" class="login-form">
+            <h3>Iniciar Sesión</h3>
+            <input type="email" placeholder="correo electrónico" class="box" required>
+            <input type="password" placeholder="contraseña" class="box" required>
+            <p>¿Olvidaste tu contraseña? <a href="#">click aquí</a></p>
+            <p>¿No tienes una cuenta? <a href="registrarte.html">Regístrate</a></p>
+            <div class="container">
+                <input type="submit" value="Ingresar" class="btn">
+            </div>
+        </form>
+
+    </header>
+
+    <!--search -->
+    <form action="" id="search-form">
+        <input type="search"  placeholder="¿Qué estás buscando?" id="search-box" width="1540" height="318">
+        <label for="search-box" class="fas fa-search"></label>
+        <i class="fas fa-times" id="close"></i>
+    </form>
+     
+    <!-- Home section -->
+    <section class="container-home">
+        <div class="col-md-9 ftco-animate text-center mb-4">
+            <h1 class="mb-2 bread">Productos</h1>
+            <p class="breadcrumbs">
+                <span class="mr-2"><a href="index.html">Home <i class="ion-ios-arrow-forward"></i></a></span>
+                <span>Productos <i class="ion-ios-arrow-forward"></i></span>
+            </p>
+        </div>
+    </section>
+    
+    <!-- Filtro debajo de la imagen -->
+    <section id="filtro"  class="filter-section text-center">
+        <a class="">Filtrar</a>
+        <select class="filter-dropdown" id="categoryFilter">
+            <option value="all">Todas las categorías</option>
+            <option value="category1">Galltetas y brownies</option>
+            <option value="category2">Kekes</option>
+            <option value="category3">Pies y Cheesecakes</option>
+            <option value="category4">Tortas Encanto</option>
+            <option value="category5">Celebra Encanto</option>
+        </select>
+        <span class="results-info">Mostrar 1-16 de 32 resultados</span>
+    </section>
+    
+    <!---Productos section -->
+    <section class="productos" id="productos">
+        <!---Producto 1-->
+        <div class="box-container">
+            <div class="box category3">
+                <span class="discount">-15%</span>
+                <div class="image">
+                    <img src="img/pies_cheesecakes/pie_limon.jpg" alt="" width="256" height="345">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn" onclick="addToCart({ id: 1, name: 'Pie de Limón', price: 27.20, image: 'img/pies_cheesecakes/pie_limon.jpg' })">add to cart</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                    <div class="content">
+                        <h3>Pie de Limón</h3>
+                        <div class="price"> S/.27.20 <span>S/.32.00</span> </div>
+                    </div>
+                </div>
+            </div>
+
+            <!---Producto 2-->
+            <div class="box category2">
+                <span class="discount">-10%</span>
+                <div class="image">
+                    <img src="img/kekes/loaf_keke_blueberry_con_chocolate.jpg" alt="" width="256" height="345">
+                    <div class="icons">
+                        <a href="" class="fas fa-heart"></a>
+                        <a href="" class="cart-btn" onclick="addToCart({ id: 2, name: 'Keke de Blueberrys', price: 25.20, image: 'img/kekes/loaf_keke_blueberry_con_chocolate.jpg' })">add to cart</a>
+                        <a href="" class="fas fa-share"></a>
+                    </div>
+                    <div class="content">
+                        <h3>Keke de Blueberrys</h3>
+                        <div class="price"> S/.25.20 <span>S/.28.00</span> </div>
+                    </div>
+                </div>
+            </div>
+
+            <!---Producto 3-->
+            <div class="box category2">
+                <span class="new">Nuevo</span>
+                <div class="image">
+                    <img src="img/kekes/keke_pistacho.jpg" alt="" width="256" height="345"> 
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn" onclick="addToCart({ id: 3, name: 'Keke de Pistacho', price: 38.00, image: 'img/kekes/keke_pistacho.jpg' })">add to cart</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                    <div class="content">
+                        <h3>Keke de Pistacho</h3>
+                        <div class="price">S/.38.00</div>
+                    </div>
+                </div>
+            </div>
+
+            <!---Producto 4-->
+            <div class="box category1">
+                <span class="discount">-15%</span>
+                <div class="image">
+                    <img src="img/galletas_brownies/galleta_avena_chispachoco.jpg" alt="" width="256" height="345">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn" onclick="addToCart({ id: 4, name: 'Galleta de Avena', price: 21.25, image: 'img/galletas_brownies/galleta_avena_chispachoco.jpg' })">add to cart</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                    <div class="content">
+                        <h3>Galleta de Avena</h3>
+                        <div class="price"> S/.21.25 <span>S/.25.00</span> </div>
+                    </div>
+                </div>
+            </div>
+
+            <!---Producto 5-->
+            <div class="box category3">
+                <span class="discount">-15%</span>
+                <div class="image">
+                    <img src="img/pies_cheesecakes/cheesecake_oreo.jpg" alt="" width="256" height="345">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn" onclick="addToCart({ id: 5, name: 'Cheesecake de Oreo', price: 24.65, image: 'img/pies_cheesecakes/cheesecake_oreo.jpg' })">add to cart</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                    <div class="content">
+                        <h3>Cheesecake de Oreo</h3>
+                        <div class="price"> S/.24.65 <span>S/.29.00</span> </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!---Producto 6-->
+            <div class="box category2">
+                <span class="discount">-10%</span>
+                <div class="image">
+                    <img src="img/kekes/bundt_cake_choco_cobertura_chocoavellana.jpg" alt="" width="256" height="345">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn" onclick="addToCart({ id: 6, name: 'Keke de Chocolate', price: 28.80, image: 'img/kekes/bundt_cake_choco_cobertura_chocoavellana.jpg' })">add to cart</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                    <div class="content">
+                        <h3>Keke de Chocolate</h3>
+                        <div class="price"> S/.28.80 <span>S/.32.00</span> </div>
+                    </div>
+                </div>
+            </div>
+
+            <!---Producto 7-->
+            <div class="box category2">
+                <span class="new">Nuevo</span>
+                <div class="image">
+                    <img src="img/kekes/keke_1.jpg" alt="" width="256" height="345">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn" onclick="addToCart({ id: 7, name: 'Keke de Naranja', price: 30.00, image: 'img/kekes/keke_1.jpg' })">add to cart</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                    <div class="content">
+                        <h3>Keke Espiral de Naranja</h3>
+                        <div class="price"> S/.30.00</div>
+                    </div>
+                </div>
+            </div>
+
+            <!---Producto 8-->
+            <div class="box">
+                <span class="discount category5">-5%</span>
+                <div class="image">
+                    <img src="img/celebraEncanto/croissants_caja.jpg" alt="" width="256" height="345">
+                    <div class="icons">
+                        <a href="" class="fas fa-heart"></a>
+                        <a href="" class="cart-btn" onclick="addToCart({ id: 8, name: 'Croissants', price: 42.75, image: 'img/celebraEncanto/croissants_caja.jpg' })">add to cart</a>
+                        <a href="" class="fas fa-share"></a>
+                    </div>
+                    <div class="content">
+                        <h3>Croissants</h3>
+                        <div class="price"> S/.42.75 <span>S/.45.00</span ></div>
+                    </div>
+                </div>
+            </div>
+
+            <!---Producto 9-->
+            <div class="box category1">
+                <div class="image">
+                    <img src="img/galletas_brownies/galletas_pistacho.jpg" alt="" width="256" height="345">
+                    <div class="icons">
+                        <a href="" class="fas fa-heart"></a>
+                        <a href="" class="cart-btn" onclick="addToCart({ id: 9, name: 'Galleta de Pistacho', price: 32.00, image: 'img/galletas_brownies/galletas_pistacho.jpg' })">add to cart</a>
+                        <a href="" class="fas fa-share"></a>
+                    </div>
+                    <div class="content">
+                        <h3>Galleta de Pistacho</h3>
+                        <div class="price"> S/.32.00</div>
+                    </div>
+                </div>
+            </div>
+
+            <!---Producto 10-->
+            <div class="box category5">
+                <div class="image">
+                    <img src="img/celebraEncanto/cupcakes_caja.jpg" alt="" width="256" height="345">
+                    <div class="icons">
+                        <a href="" class="fas fa-heart"></a>
+                        <a href="" class="cart-btn" onclick="addToCart({ id: 10, name: 'Cupcakes', price: 35.00, image: 'img/celebraEncanto/cupcakes_caja.jpg' })">add to cart</a>
+                        <a href="" class="fas fa-share"></a>
+                    </div>
+                    <div class="content">
+                        <h3>Cupcakes de Vainilla</h3>
+                        <div class="price"> S/.35.00</div>
+                    </div>
+                </div>
+            </div>
+
+            <!---Producto 11-->
+            <div class="box category4">
+                <span class="new">Nuevo</span>
+                <div class="image">
+                    <img src="img/tortas_Encanto/tortaEspecial_1.jpg" alt="" width="256" height="345">
+                    <div class="icons">
+                        <a href="" class="fas fa-heart"></a>
+                        <a href="" class="cart-btn" onclick="addToCart({ id: 11, name: 'Pastel Encanto', price: 140.00, image: 'img/tortas_Encanto/tortaEspecial_1.jpg' })">add to cart</a>
+                        <a href="" class="fas fa-share"></a>
+                    </div>
+                    <div class="content">
+                        <h3>Pastel Encanto</h3>
+                        <div class="price"> S/.140.00</div>
+                    </div>
+                </div>
+            </div>
+
+            <!---Producto 12-->
+            <div class="box category5">
+                <div class="image">
+                    <img src="img/celebraEncanto/cinamonrolls.jpg" alt="" width="256" height="345">
+                    <div class="icons">
+                        <a href="" class="fas fa-heart"></a>
+                        <a href="" class="cart-btn" onclick="addToCart({ id: 12, name: 'Cinnamon Rolls', price: 48.00, image: 'img/celebraEncanto/cinamonrolls.jpg' })">add to cart</a>
+                        <a href="" class="fas fa-share"></a>
+                    </div>
+                    <div class="content">
+                        <h3>Cinnamon Rolls</h3>
+                        <div class="price"> S/.48.00</div>
+                    </div>
+                </div>
+            </div>
+
+            <!---Producto 13-->
+            <div class="box category2">
+                <span class="discount">-15%</span>
+                <div class="image">
+                    <img src="img/kekes/keke_marmoleado.jpg" alt="" width="256" height="345">
+                    <div class="icons">
+                        <a href="" class="fas fa-heart"></a>
+                        <a href="" class="cart-btn" onclick="addToCart({ id: 13, name: 'Keke Marmoleado', price: 21.25, image: 'img/kekes/keke_marmoleado.jpg' })">add to cart</a>
+                        <a href="" class="fas fa-share"></a>
+                    </div>
+                    <div class="content">
+                        <h3>Keke Marmoleado</h3>
+                        <div class="price"> S/.21.25 <span>S/.25.00</span ></div>
+                    </div>
+                </div>
+            </div>
+
+            <!---Producto 14-->
+            <div class="box category2">
+                <div class="image">
+                    <img src="img/kekes/loaf_keke_limon.jpg" alt="" width="256" height="345">
+                    <div class="icons">
+                        <a href="" class="fas fa-heart"></a>
+                        <a href="" class="cart-btn" onclick="addToCart({ id: 14, name: 'Loaf Cake de Limón', price: 29.00, image: 'img/kekes/loaf_keke_limon.jpg' })">add to cart</a>
+                        <a href="" class="fas fa-share"></a>
+                    </div>
+                    <div class="content">
+                        <h3>Loaf Cake de Limón</h3>
+                        <div class="price"> S/.29.00</div>
+                    </div>
+                </div>
+            </div>
+
+            <!---Producto 15-->
+            <div class="box category1">
+                <span class="discount">-10%</span>
+                <div class="image">
+                    <img src="img/galletas_brownies/galleta_redvelvet.jpg" alt="" width="256" height="345">
+                    <div class="icons">
+                        <a href="" class="fas fa-heart"></a>
+                        <a href="" class="cart-btn" onclick="addToCart({ id: 15, name: 'Galleta Redvelvet', price: 25.20, image: 'img/galletas_brownies/galleta_redvelvet.jpg' })">add to cart</a>
+                        <a href="" class="fas fa-share"></a>
+                    </div>
+                    <div class="content">
+                        <h3>Galleta Redvelvet</h3>
+                        <div class="price"> S/.25.20<span>S/.28.00</span ></div>
+                    </div>
+                </div>
+            </div>
+
+            <!---Producto 16-->
+            <div class="box category4">
+                <span class="new">Nuevo</span>
+                <div class="image">
+                    <img src="img/tortas_Encanto/tortaEspecial_4.jpg" alt="" width="256" height="345">
+                    <div class="icons">
+                        <a href="" class="fas fa-heart"></a>
+                        <a href="" class="cart-btn" onclick="addToCart({ id: 16, name: 'Pastel Blueberrys', price: 72.00, image: 'img/tortas_Encanto/tortaEspecial_4.jpg' })">add to cart</a>
+                        <a href="" class="fas fa-share"></a>
+                    </div>
+                    <div class="content">
+                        <h3>Pastel Blueberrys</h3>
+                        <div class="price"> S/.72.00</div>
+                    </div>
+                </div>
+            </div>
+
+            <!---Producto 17-->
+            <div class="box category4">
+                <span class="new">Nuevo</span>
+                <div class="image">
+                    <img src="img/tortas_Encanto/tortaEspecial_3.jpg" alt="" width="256" height="345">
+                    <div class="icons">
+                        <a href="" class="fas fa-heart"></a>
+                        <a href="" class="cart-btn" onclick="addToCart({ id: 17, name: 'Pastel Autumn Berry', price: 42.00, image: 'img/tortas_Encanto/tortaEspecial_3.jpg' })">add to cart</a>
+                        <a href="" class="fas fa-share"></a>
+                    </div>
+                    <div class="content">
+                        <h3>Pastel Autumn Berry</h3>
+                        <div class="price"> S/.42.00</div>
+                    </div>
+                </div>
+            </div>
+
+            <!---Producto 18-->
+            <div class="box category2">
+                <div class="image">
+                    <img src="img/kekes/loaf_keke_redvelvet_frutosdelbosque.jpg" alt="" width="256" height="345">
+                    <div class="icons">
+                        <a href="" class="fas fa-heart"></a>
+                        <a href="" class="cart-btn" onclick="addToCart({ id: 18, name: 'Loaf Cake RedVelvet', price: 35.00, image: 'img/kekes/loaf_keke_redvelvet_frutosdelbosque.jpg' })">add to cart</a>
+                        <a href="" class="fas fa-share"></a>
+                    </div>
+                    <div class="content">
+                        <h3>Loaf Cake RedVelvet</h3>
+                        <div class="price"> S/.35.00</div>
+                    </div>
+                </div>
+            </div>
+
+            <!---Producto 19-->
+            <div class="box category1">
+                <div class="image">
+                    <img src="img/galletas_brownies/brownie.jpg" alt="" width="256" height="345">
+                    <div class="icons">
+                        <a href="" class="fas fa-heart"></a>
+                        <a href="" class="cart-btn" onclick="addToCart({ id: 19, name: 'Brownies', price: 19.00, image: 'img/galletas_brownies/brownie.jpg' })">add to cart</a>
+                        <a href="" class="fas fa-share"></a>
+                    </div>
+                    <div class="content">
+                        <h3>Brownies</h3>
+                        <div class="price"> S/.19.00</div>
+                    </div>
+                </div>
+            </div>
+
+            <!---Producto 20-->
+            <div class="box category4">
+                <span class="new">Nuevo</span>
+                <div class="image">
+                    <img src="img/tortas_Encanto/Especiales_5.jpg" alt="" width="256" height="345">
+                    <div class="icons">
+                        <a href="" class="fas fa-heart"></a>
+                        <a href="" class="cart-btn" onclick="addToCart({ id: 20, name: 'Pastel Summer Daisy', price: 40.00, image: 'img/tortas_Encanto/Especiales_5.jpg' })">add to cart</a>
+                        <a href="" class="fas fa-share"></a>
+                    </div>
+                    <div class="content">
+                        <h3>Pastel Summer Daisy</h3>
+                        <div class="price"> S/.40.00</div>
+                    </div>
+                </div>
+            </div>
+
+            <!---Producto 21-->
+            <div class="box category1">
+                <div class="image">
+                    <img src="img/galletas_brownies/galleta_chispaschoco.jpg" alt="" width="256" height="345">
+                    <div class="icons">
+                        <a href="" class="fas fa-heart"></a>
+                        <a href="" class="cart-btn" onclick="addToCart({ id: 21, name: 'Galleta Chocochips', price: 20.00, image: 'img/galletas_brownies/galleta_chispaschoco.jpg' })">add to cart</a>
+                        <a href="" class="fas fa-share"></a>
+                    </div>
+                    <div class="content">
+                        <h3>Galleta Chocochips</h3>
+                        <div class="price"> S/.20.00</div>
+                    </div>
+                </div>
+            </div>
+
+            <!---Producto 22-->
+            <div class="box category2">
+                <span class="discount">-10%</span>
+                <div class="image">
+                    <img src="img/kekes/keke_vainilla.jpg" alt="" width="256" height="345">
+                    <div class="icons">
+                        <a href="" class="fas fa-heart"></a>
+                        <a href="" class="cart-btn" onclick="addToCart({ id: 22, name: 'Keke de Vainilla', price: 17.10, image: 'img/kekes/keke_vainilla.jpg' })">add to cart</a>
+                        <a href="" class="fas fa-share"></a>
+                    </div>
+                    <div class="content">
+                        <h3>Keke de Vainilla</h3>
+                        <div class="price"> S/.17.10 <span>S/.19.00</span ></div>
+                    </div>
+                </div>
+            </div>
+
+            <!---Producto 23-->
+            <div class="box category3">
+                <div class="image">
+                    <img src="img/pies_cheesecakes/pie_manzana.jpg" alt="" width="256" height="345">
+                    <div class="icons">
+                        <a href="" class="fas fa-heart"></a>
+                        <a href="" class="cart-btn" onclick="addToCart({ id: 23, name: 'Pie de Manzana', price: 24.00, image: 'img/pies_cheesecakes/pie_manzana.jpg' })">add to cart</a>
+                        <a href="" class="fas fa-share"></a>
+                    </div>
+                    <div class="content">
+                        <h3>Pie de Manzana</h3>
+                        <div class="price"> S/.24.00</div>
+                    </div>
+                </div>
+            </div>
+
+            <!---Producto 24-->
+            <div class="box category1">
+                <div class="image">
+                    <img src="img/galletas_brownies/galleta_choco_rellanacaramelo.jpg" alt="" width="256" height="345">
+                    <div class="icons">
+                        <a href="" class="fas fa-heart"></a>
+                        <a href="" class="cart-btn" onclick="addToCart({ id: 24, name: 'Gallet de Chococolate', price: 25.00, image: 'img/galletas_brownies/galleta_choco_rellanacaramelo.jpg' })">add to cart</a>
+                        <a href="" class="fas fa-share"></a>
+                    </div>
+                    <div class="content">
+                        <h3>Galleta de Chococolate</h3>
+                        <div class="price"> S/.25.00</div>
+                    </div>
+                </div>
+            </div>
+
+            <!---Producto 25-->
+            <div class="box category2">
+                <div class="image">
+                    <img src="img/kekes/loaf_keke_zanahoria_pecanas_albaricoque.jpg" alt="" width="256" height="345">
+                    <div class="icons">
+                        <a href="" class="fas fa-heart"></a>
+                        <a href="" class="cart-btn" onclick="addToCart({ id: 25, name: 'Loaf Cake de Zanahoria', price: 26.00, image: 'img/kekes/loaf_keke_zanahoria_pecanas_albaricoque.jpg' })">add to cart</a>
+                        <a href="" class="fas fa-share"></a>
+                    </div>
+                    <div class="content">
+                        <h3>Loaf Cake de Zanahoria</h3>
+                        <div class="price"> S/.26.00</div>
+                    </div>
+                </div>
+            </div>
+
+            <!---Producto 26-->
+            <div class="box category3">
+                <span class="new">Nuevo</span>
+                <div class="image">
+                    <img src="img/pies_cheesecakes/pie_ppecanas.jpg" alt="" width="256" height="345">
+                    <div class="icons">
+                        <a href="" class="fas fa-heart"></a>
+                        <a href="" class="cart-btn" onclick="addToCart({ id: 26, name: 'Pie de Pecanas', price: 32.00, image: 'img/pies_cheesecakes/pie_ppecanas.jpg' })">add to cart</a>
+                        <a href="" class="fas fa-share"></a>
+                    </div>
+                    <div class="content">
+                        <h3>Pie de Pecanas</h3>
+                        <div class="price"> S/.32.00</div>
+                    </div>
+                </div>
+            </div>
+
+            <!---Producto 27-->
+            <div class="box category5">
+                <div class="image">
+                    <img src="img/celebraEncanto/afajores_caja.jpg" alt="" width="256" height="345">
+                    <div class="icons">
+                        <a href="" class="fas fa-heart"></a>
+                        <a href="" class="cart-btn" onclick="addToCart({ id: 27, name: 'Alfajores', price: 15.00, image: 'img/celebraEncanto/afajores_caja.jpg' })">add to cart</a>
+                        <a href="" class="fas fa-share"></a>
+                    </div>
+                    <div class="content">
+                        <h3>Alfajores</h3>
+                        <div class="price"> S/.15.00</div>
+                    </div>
+                </div>
+            </div>
+
+            <!---Producto 28-->
+            <div class="box category4">
+                <span class="new">Nuevo</span>
+                <div class="image">
+                    <img src="img/tortas_Encanto/tortaEspecial_6.jpg" alt="" width="256" height="345">
+                    <div class="icons">
+                        <a href="" class="fas fa-heart"></a>
+                        <a href="" class="cart-btn" onclick="addToCart({ id: 28, name: 'Pastel Spring Flowers', price: 40.00, image: 'img/tortas_Encanto/tortaEspecial_6.jpg' })">add to cart</a>
+                        <a href="" class="fas fa-share"></a>
+                    </div>
+                    <div class="content">
+                        <h3>Pastel Spring Flowers</h3>
+                        <div class="price"> S/.40.00</div>
+                    </div>
+                </div>
+            </div>
+            <!---Producto 29-->
+            <div class="box category3">
+                <div class="image">
+                    <img src="img/pies_cheesecakes/cheesecake_maracuya.jpg" alt="" width="256" height="345">
+                    <div class="icons">
+                        <a href="" class="fas fa-heart"></a>
+                        <a href="" class="cart-btn" onclick="addToCart({ id: 29, name: 'Cheesecake de Maracuyá', price: 24.00, image: 'img/pies_cheesecakes/cheesecake_maracuya.jpg' })">add to cart</a>
+                        <a href="" class="fas fa-share"></a>
+                    </div>
+                    <div class="content">
+                        <h3>Cheesecake de Maracuyá</h3>
+                        <div class="price"> S/.24.00</div>
+                    </div>
+                </div>
+            </div>
+
+            <!---Producto 30-->
+            <div class="box category5">
+                <div class="image">
+                    <img src="img/celebraEncanto/minicheesecake_caja.jpg" alt="" width="256" height="345">
+                    <div class="icons">
+                        <a href="" class="fas fa-heart"></a>
+                        <a href="" class="cart-btn" onclick="addToCart({ id: 30, name: 'Mini Cheesecakes', price: 32.00, image: 'img/celebraEncanto/minicheesecake_caja.jpg' })">add to cart</a>
+                        <a href="" class="fas fa-share"></a>
+                    </div>
+                    <div class="content">
+                        <h3>Mini Cheesecakes Happy Fruts</h3>
+                        <div class="price"> S/.32.00</div>
+                    </div>
+                </div>
+            </div>
+
+            <!---Producto 31-->
+            <div class="box category5">
+                <span class="new">Nuevo</span>
+                <div class="image">
+                    <img src="img/celebraEncanto/rollosdecanela_caja.jpg" alt="" width="256" height="345">
+                    <div class="icons">
+                        <a href="" class="fas fa-heart"></a>
+                        <a href="" class="cart-btn" onclick="addToCart({ id: 31, name: 'Cinnamon Rolls Fiesta', price: 45.00, image: 'img/celebraEncanto/rollosdecanela_caja.jpg' })">add to cart</a>
+                        <a href="" class="fas fa-share"></a>
+                    </div>
+                    <div class="content">
+                        <h3>Happy Cinnamon Rolls Fiesta</h3>
+                        <div class="price"> S/.45.00</div>
+                    </div>
+                </div>
+            </div>
+
+            <!---Producto 32-->
+            <div class="box category3">
+                <span class="new">Nuevo</span>
+                <div class="image">
+                    <img src="img/pies_cheesecakes/cheesecake_summer_berry.jpg" alt="" width="256" height="345">
+                    <div class="icons">
+                        <a href="" class="fas fa-heart"></a>
+                        <a href="" class="cart-btn" onclick="addToCart({ id: 32, name: 'Cheesecake Summer Berry', price: 31.00, image: 'img/pies_cheesecakes/cheesecake_summer_berry.jpg' })">add to cart</a>
+                        <a href="" class="fas fa-share"></a>
+                    </div>
+                    <div class="content">
+                        <h3>Cheesecake Summer Berry</h3>
+                        <div class="price"> S/.31.00</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="pagination">
+            <button class="page-button" onclick="changePage(1)">1</button>
+            <button class="page-button" onclick="changePage(2)">2</button>
+        </div>
+    </section>
+    
+
+    <!-- Sección de Beneficios -->
+    <section class="beneficios">
+
+        <div class="beneficio-item">
+            <i class="fas fa-money-bill-alt"></i>
+            <h4>Devolución en 10 días</h4>
+            <p>garantía de devolución</p>
+        </div>
+
+        <div class="beneficio-item">
+            <i class="fas fa-truck"></i>
+            <h4>Delivery Gratis</h4>
+            <p>en todos los pedidos</p>
+        </div>
+
+        <div class="beneficio-item">
+            <i class="fas fa-gift"></i>
+            <h4>Ofertas & regalos</h4>
+            <p>en todos los pedidos</p>
+        </div>
+
+        <div class="beneficio-item">
+            <i class="fas fa-credit-card"></i>
+            <h4>Pago Seguro</h4>
+            <p>transacciones 100% seguras</p>
+        </div>
+    </section>
+
+    <!---Footer -->
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h2>Dulce Encanto</h2>
+                <p>La dulzura que mereces, directo a tu puerta.</p>
+                <div class="share">
+                    <a href="#" class="fa-brands fa-facebook"></a>
+                    <a href="#" class="fa-brands fa-instagram"></a>
+                    <a href="#" class="fa-brands fa-whatsapp"></a>
+                    <a href="#" class="fa-brands fa-tiktok"></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <h3>Información de contacto</h3>
+                <a href="#" class="links"> <i class="fa-solid fa-phone"></i> (01) 265-2441</a>             
+                <a href="#" class="links"> <i class="fa-solid fa-phone"></i> (51) 923-456-678</a>   
+                <a href="#" class="links"> <i class="fa-solid fa-envelope"></i>  dulcencanto@gmail.com</a>   
+            </div>
+
+            <div class="box">
+                <h3>Links de interés</h3>
+                <a href="#home" class="links"> <i class="fa-solid fa-paperclip"></i> Home</a>
+                <a href="#nosotros" class="links"> <i class="fa-solid fa-paperclip"></i> Nosotros</a>
+                <a href="#productos" class="links"> <i class="fa-solid fa-paperclip"></i> Productos</a>
+                <a href="#contacto" class="links"> <i class="fa-solid fa-paperclip"></i> Contacto</a>
+                <a href="#" class="links"> <i class="fa-solid fa-paperclip"></i> Libro de Reclamaciones</a>
+                <a href="#" class="links"> <i class="fa-solid fa-paperclip"></i> Términos y Condiciones</a>
+                <a href="#" class="links"> <i class="fa-solid fa-paperclip"></i> Servicio al Cliente</a>
+            </div>
+
+            <div class="box">
+                <h3>Medios de pago</h3>
+                <a class="pago"> <i class="fa-brands fa-cc-visa"></i></a>
+                <a class="pago"> <i class="fa-brands fa-cc-mastercard"></i></a>
+                <a class="pago"> <i class="fa-brands fa-cc-paypal"></i></a>
+            </div>
+        </div>
+
+        <div class="credit">&copy; 2023 Dulce Encanto. Todos los derechos reservados.</div>
+    </section>
+ 
+    <!--Loader
+     <section class="loader-container">
+        <img src="img/gif2.gif" alt="">
+    </section>
+    -->
+
+
+    <!-- JavaScript code -->
+    <script>
+        let menu = document.querySelector('.fas.fa-bars');
+        let navbar = document.querySelector('.navbar');
+
+        window.onscroll = () => {
+            menu.classList.remove('fa-times');
+            navbar.classList.remove('active');
+        };
+
+        // Activar el formulario de búsqueda
+        document.querySelector('#search-icon').onclick = () => {
+            document.querySelector('#search-form').classList.toggle('active');
+        };
+
+        // Cerrar el formulario de búsqueda
+        document.querySelector('#close').onclick = () => {
+            document.querySelector('#search-form').classList.remove('active');
+        };
+
+
+        /*
+        function loader(){
+            document.querySelector('.loader-container').classList.add('fade-out');
+        }
+
+        function fadeOut(){
+            setInterval(loader, 5000);
+        }
+
+        window.onload = fadeOut;*/
+
+
+        /*<ctivar carrito*/
+        const cartIcon = document.querySelector('.fas.fa-shopping-cart');
+        const shoppingCart = document.querySelector('.shopping-cart');
+
+        cartIcon.addEventListener('click', () => {
+            shoppingCart.style.display = shoppingCart.style.display === 'block' ? 'none' : 'block';
+        });
+
+        /*activar inicio sesion*/
+        let loginForm = document.querySelector('.login-form');
+
+        document.querySelector('#login-btn').onclick = () =>{
+            loginForm.classList.toggle('active');
+        }
+
+
+        // añadir productos al carrito
+
+        function addToCart(product) {
+            let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+            // Agrega el producto al carrito
+            cart.push(product);
+            localStorage.setItem("cart", JSON.stringify(cart));
+
+            alert("Producto agregado al carrito");
+            displayCart(); // Llama a displayCart para actualizar el carrito inmediatamente
+        }
+
+        function displayCart() {
+            const cartContainer = document.querySelector(".shopping-cart");
+            let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+            // Limpia el contenido del carrito antes de actualizar
+            cartContainer.innerHTML = `
+                <h2>Carrito de Compra</h2>
+                <hr class="divider">
+            `;
+
+            let total = 0;
+
+            cart.forEach(item => {
+                total += item.price;
+
+                // Agrega cada producto en el HTML
+                cartContainer.innerHTML += `
+                    <div class="box">
+                        <i class="fas fa-trash" onclick="removeFromCart(${item.id})"></i>
+                        <img src="${item.image}" alt="${item.name}" width="111" height="106">
+                        <div class="content">
+                            <h3>${item.name}</h3>
+                            <span class="price">S/${item.price.toFixed(2)}</span>
+                            <span class="quantity">cantidad: 1</span>
+                        </div>
+                    </div>
+                `;
+            });
+
+            // Muestra el total
+            cartContainer.innerHTML += `
+                <div class="total">Total : S/${total.toFixed(2)}</div>
+                <div class="button-container">
+                    <a href="carrito.html" class="btn">Ver Carrito</a>
+                    <a href="checkout.html" class="btn">Checkout</a>
+                </div>
+            `;
+        }
+
+
+        function removeFromCart(productId) {
+            let cart = JSON.parse(localStorage.getItem("cart")) || [];
+            cart = cart.filter(item => item.id !== productId);
+            localStorage.setItem("cart", JSON.stringify(cart));
+            displayCart(); // Actualizar la vista del carrito
+        }
+
+        document.addEventListener("DOMContentLoaded", displayCart);
+
+
+
+        //Filtrar Productos en Producto
+
+        // Define los productos en un objeto
+        const productos = {
+            category1: ["Galleta de Avena", "Galleta de Pistacho", "Galleta RedVelvet", "Brownies", "Galleta Chocochips", "Galleta de Chocolate"],
+            category2: ["Keke de Blueberrys", "Keke de Pistacho", "Keke de Chocolate", "Keke Espiral de Naranja", "Keke Marmoleado", "Loaf Cake de Limón", "Keke de Vainilla", "Loaf Cake de Zanahoria", "LoaF Cake RedVelvet"],
+            category3: ["Pie de Limón", "Cheesecake de Oreo", "Pie de Manzana", "Pie de Pecanas", "Cheesecake de Maracuyá", "Cheesecake Summer Berry"],
+            category4: ["Pastel Encanto", "Pastel Blueberrys", "Pastel Autumn Berry", "Pastel Spring Flowers", "Pastel Summer Daisy"],
+            category5: ["Croissants", "Cinnamon Rolls", "Cupcakes de Vainilla", "Alfajores", "Mini Cheesecakes Happy Fruts", "Happy Cinnamon Rolls Fiesta"],
+            all: ["Keke de Blueberrys", "Keke de Pistacho", "Keke de Chocolate", "Keke Espiral de Naranja", "Pie de Limón", "Cheesecake de Oreo", "Galleta de Avena", "Croissants" ]
+        };
+
+        const categoryFilter = document.getElementById("categoryFilter");
+        const productContainer = document.getElementById("productContainer");
+
+        document.getElementById("categoryFilter").addEventListener("change", function() {
+        const selectedCategory = this.value;
+        const products = document.querySelectorAll(".box");
+
+            products.forEach((product) => {
+                if (selectedCategory === "all" || product.classList.contains(selectedCategory)) {
+                    product.style.display = "block";
+                } else {
+                    product.style.display = "none";
+                }
+            });
+        });
+
+
+
+        // Función para mostrar productos en el contenedor
+        function displayProducts(category) {
+            // Limpiar contenedor
+            productContainer.innerHTML = "";
+
+            // Obtener productos de la categoría seleccionada
+            const selectedProducts = products[category] || products["all"];
+
+            // Generar HTML para cada producto y añadirlo al contenedor
+            selectedProducts.forEach(product => {
+                const productElement = document.createElement("div");
+                productElement.classList.add("product-item");
+                productElement.textContent = product;
+                productContainer.appendChild(productElement);
+            });
+        }
+
+        // Evento para cambiar los productos cuando cambia la selección
+        categoryFilter.addEventListener("change", (event) => {
+            const selectedCategory = event.target.value;
+            displayProducts(selectedCategory);
+        });
+
+        // Mostrar todos los productos al cargar la página
+        displayProducts("all");
+
+
+
+        // PAGINACIÓN
+        const productsPerPage = 16;
+        let currentPage = 1;
+
+        function displayProducts(page) {
+            const products = document.querySelectorAll('.product');
+            products.forEach((product, index) => {
+                // Calcular el rango de productos que deben estar visibles en esta página
+                const start = (page - 1) * productsPerPage;
+                const end = start + productsPerPage;
+
+                if (index >= start && index < end) {
+                    product.style.display = 'block';  // Mostrar producto
+                } else {
+                    product.style.display = 'none';   // Ocultar producto
+                }
+            });
+        }
+
+        // Cambiar a la página seleccionada
+        function changePage(page) {
+            currentPage = page;
+            displayProducts(currentPage);
+        }
+
+        // Inicializar mostrando la primera página
+        displayProducts(currentPage);
+
+
+
+
+
+
+
+
+        // Función para leer texto en voz alta
+        function speakText(text) {
+            var utterance = new SpeechSynthesisUtterance(text);
+            window.speechSynthesis.speak(utterance);
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+
+            // Mensaje de bienvenida con un retraso para asegurar que se escuche
+            var elements = document.querySelectorAll('#nombre, #correo, #telefono, #mensaje, #enviar');
+            var isReadingEnabled = false;
+    
+            document.addEventListener('keydown', function(event) {
+                if (event.key === 'f') {
+                isReadingEnabled = true;
+                console.log('Lectura activada. Pase el cursor sobre los elementos para escuchar.');
+                speakText('Lectura activada, Pase el cursor sobre los elementos para escuchar');
+                } else if (event.key === '*') {
+                isReadingEnabled = false;
+                console.log('Lectura desactivada.');
+                speakText('Lectura desactivada.');
+
+                }
+            });
+    
+            elements.forEach(function(element) {
+                element.addEventListener('mouseover', function() {
+                if (isReadingEnabled) {
+                    var labelText = '';
+                    if (this.id === 'nombre') {
+                        labelText = 'Nombre y Apellido';
+                        } else if (this.id === 'correo') {
+                        labelText = 'Correo electrónico';
+                        } else if (this.id === 'telefono') {
+                        labelText = 'Teléfono';
+                        } else if (this.id === 'mensaje') {
+                        labelText = 'Mensaje';
+                        } else if (this.id === 'enviar') {
+                        labelText = 'enviar';
+                        } else {
+                        labelText = this.textContent.trim();
+                        }
+                        speakText(labelText);
+                    }
+                });
+            });
+        });
+  
+
+    </script>
+
+</body>
+</html>

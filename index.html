@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dulce Encanto</title>
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+            
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+<body>
+    <header>
+        <input type="checkbox" name="" id="toggler">
+        <label for="toggler" class="fas fa-bars"></label>
+        <a id="log" href="index.html" class="logo">Dulce Encanto</a>
+        <nav class="navbar">
+            <a class="active" href="index.html">Home</a>
+            <a href="productos.html">Productos</a>
+            <a href="index.html.#nosotros">Nosotros</a>
+            <a href="index.html.#review">Review</a>
+            <a href="index.html.#contacto">Contacto</a>
+            <a href="ConócenosMás.html">Conócenos Más</a>
+        </nav>
+        <div class="icons">
+            <a href="#" class="fas fa-search" id="search-icon"></a> 
+            <a href="favorito.html" class="fas fa-heart" id="fav"></a>
+            <a href="#" class="fas fa-user" id="login-btn"></a>
+            <a href="#" class="fas fa-shopping-cart" id="carr"></a>
+        </div>
+
+        <div class="shopping-cart">
+            <h2>Carrito de Compra</h2>
+        
+            <hr class="divider">
+            <!-- Aquí se llenará el carrito dinámicamente -->
+
+
+            <div class="total"> Total : S/0.00</div>
+
+            <div class="button-container">
+                <a href="carrito.html" class="btn">Ver Carrito</a>
+                <a href="" class="btn">Checkout</a>
+            </div>
+        </div>
+
+        <form action="" class="login-form">
+            <h3>Iniciar Sesión</h3>
+            <input type="email" placeholder="correo electrónico" class="box" required>
+            <input type="password" placeholder="contraseña" class="box" required>
+            <p>¿Olvidaste tu contraseña? <a href="#">click aquí</a></p>
+            <p>¿No tienes una cuenta? <a href="registrarte.html">Regístrate</a></p>
+            <div class="container">
+                <input type="submit" value="Ingresar" class="btn">
+            </div>
+        </form>
+
+    </header>
+
+    <form action="" id="search-form">
+        <input type="search"  placeholder="¿Qué estás buscando?" id="search-box" width="1540" height="318">
+        <label for="search-box" class="fas fa-search"></label>
+        <i class="fas fa-times" id="close"></i>
+    </form>
+
+    <!-- Home section -->
+    <section class="home" id="home">
+        <!--<img src="img/Pasteles.png" alt="Promoción de pasteles">-->
+    </section>
+
+    <!--- Nosotros section -->
+    <section class="nosotros" id="nosotros">
+        <h2 class="heading"> Nosotros </h2>
+        <div class="row">
+            <div class="img-nosotros">
+                <img src="img/img_nosotross 2.png" alt="Imagen Nosotros">
+            </div>
+    
+            <div class="content">
+                <p>En Dulce Encanto, llevamos más de 10 años endulzando momentos especiales con nuestros deliciosos postres. 
+                    Desde el primer día, nuestro compromiso ha sido ofrecer productos de la más alta calidad, elaborados con 
+                    ingredientes frescos y cuidadosamente seleccionados. Nos enorgullece formar parte de la vida de nuestros clientes, 
+                    brindando dulces que no solo conquistan el paladar, sino que también crean recuerdos inolvidables. 
+                </p>
+                <p>A lo largo de estos años, hemos crecido gracias a la confianza de nuestros clientes y la pasión que ponemos 
+                    en cada detalle. Ya sea que busques un postre para una ocasión especial o un antojo del día a día, en Dulce Encanto 
+                    encontrarás el toque perfecto para cualquier momento.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+     <!-- Sección de Beneficios -->
+    <section class="beneficios">
+
+        <div class="beneficio-item">
+            <i class="fas fa-money-bill-alt"></i>
+            <h4>Devolución en 10 días</h4>
+            <p>garantía de devolución</p>
+        </div>
+
+        <div class="beneficio-item">
+            <i class="fas fa-truck"></i>
+            <h4>Delivery Gratis</h4>
+            <p>en todos los pedidos</p>
+        </div>
+
+        <div class="beneficio-item">
+            <i class="fas fa-gift"></i>
+            <h4>Ofertas & regalos</h4>
+            <p>en todos los pedidos</p>
+        </div>
+
+        <div class="beneficio-item">
+            <i class="fas fa-credit-card"></i>
+            <h4>Pago Seguro</h4>
+            <p>transacciones 100% seguras</p>
+        </div>
+    </section>
+
+    <!---Productos section -->
+    <section class="productos" id="productos">
+        <h1 class="heading"> Nuestros Productos </h1>
+        <!---Producto 1-->
+        <div class="box-container">
+            <div class="box">
+                <span class="discount">-15%</span>
+                <div class="image">
+                    <img src="img/pies_cheesecakes/pie_limon.jpg" alt="" width="256" height="345">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn" onclick="addToCart({ id: 1, name: 'Pie de Limón', price: 27.20, image: 'img/pies_cheesecakes/pie_limon.jpg' })">add to cart</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                    <div class="content">
+                        <h3>Pie de Limón</h3>
+                        <div class="price"> S/.27.20 <span>S/.32.00</span> </div>
+                    </div>
+                </div>
+            </div>
+
+            <!---Producto 2-->
+            <div class="box">
+                <span class="discount">-10%</span>
+                <div class="image">
+                    <img src="img/kekes/loaf_keke_blueberry_con_chocolate.jpg" alt="" width="256" height="345">
+                    <div class="icons">
+                        <a href="" class="fas fa-heart"></a>
+                        <a href="" class="cart-btn" onclick="addToCart({ id: 2, name: 'Keke de Blueberrys', price: 25.20, image: 'img/kekes/loaf_keke_blueberry_con_chocolate.jpg' })">add to cart</a>
+                        <a href="" class="fas fa-share"></a>
+                    </div>
+                    <div class="content">
+                        <h3>Keke de Blueberrys</h3>
+                        <div class="price"> S/.25.20 <span>S/.28.00</span> </div>
+                    </div>
+                </div>
+            </div>
+
+            <!---Producto 3-->
+            <div class="box">
+                <span class="new">Nuevo</span>
+                <div class="image">
+                    <img src="img/kekes/keke_pistacho.jpg" alt="" width="256" height="345"> 
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn" onclick="addToCart({ id: 3, name: 'Keke de Pistacho', price: 38.00, image: 'img/kekes/keke_pistacho.jpg' })">add to cart</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                    <div class="content">
+                        <h3>Keke de Pistacho</h3>
+                        <div class="price">S/.38.00</div>
+                    </div>
+                </div>
+            </div>
+
+            <!---Producto 4-->
+            <div class="box">
+                <span class="discount">-15%</span>
+                <div class="image">
+                    <img src="img/galletas_brownies/galleta_avena_chispachoco.jpg" alt="" width="256" height="345">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn" onclick="addToCart({ id: 4, name: 'Galleta de Avena', price: 21.25, image: 'img/galletas_brownies/galleta_avena_chispachoco.jpg' })">add to cart</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                    <div class="content">
+                        <h3>Galleta de Avena</h3>
+                        <div class="price"> S/.21.25 <span>S/.25.00</span> </div>
+                    </div>
+                </div>
+            </div>
+
+            <!---Producto 5-->
+            <div class="box">
+                <span class="discount">-15%</span>
+                <div class="image">
+                    <img src="img/pies_cheesecakes/cheesecake_oreo.jpg" alt="" width="256" height="345">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn" onclick="addToCart({ id: 5, name: 'Cheesecake de Oreo', price: 24.65, image: 'img/pies_cheesecakes/cheesecake_oreo.jpg' })">add to cart</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                    <div class="content">
+                        <h3>Cheesecake de Oreo</h3>
+                        <div class="price"> S/.24.65 <span>S/.29.00</span> </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!---Producto 6-->
+            <div class="box">
+                <span class="discount">-10%</span>
+                <div class="image">
+                    <img src="img/kekes/bundt_cake_choco_cobertura_chocoavellana.jpg" alt="" width="256" height="345">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn" onclick="addToCart({ id: 6, name: 'Keke de Chocolate', price: 28.80, image: 'img/kekes/bundt_cake_choco_cobertura_chocoavellana.jpg' })">add to cart</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                    <div class="content">
+                        <h3>Keke de Chocolate</h3>
+                        <div class="price"> S/.28.80 <span>S/.32.00</span> </div>
+                    </div>
+                </div>
+            </div>
+
+            <!---Producto 7-->
+            <div class="box">
+                <span class="new">Nuevo</span>
+                <div class="image">
+                    <img src="img/kekes/keke_1.jpg" alt="" width="256" height="345">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn" onclick="addToCart({ id: 7, name: 'Keke de Naranja', price: 30.00, image: 'img/kekes/keke_1.jpg' })">add to cart</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                    <div class="content">
+                        <h3>Keke Espiral de Naranja</h3>
+                        <div class="price"> S/.30.00</div>
+                    </div>
+                </div>
+            </div>
+
+            <!---Producto 8-->
+            <div class="box">
+                <span class="discount">-5%</span>
+                <div class="image">
+                    <img src="img/celebraEncanto/croissants_caja.jpg" alt="" width="256" height="345">
+                    <div class="icons">
+                        <a href="" class="fas fa-heart"></a>
+                        <a href="" class="cart-btn" onclick="addToCart({ id: 8, name: 'Croissants', price: 42.75, image: 'img/celebraEncanto/croissants_caja.jpg' })">add to cart</a>
+                        <a href="" class="fas fa-share"></a>
+                    </div>
+                    <div class="content">
+                        <h3>Croissants</h3>
+                        <div class="price"> S/.42.75 <span>S/.45.00</span ></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!---Review -->
+    <section class="review" id="review">
+        <h1 class="heading"> Opinión de nuestros clientes</h1>
+
+        <div class="box-container">
+
+            <!---Cliente 1 -->
+            <div class="box">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="user">
+                    <a class="fa-regular fa-user"></a>
+                </div>
+                <p>"La atención es de primera. Son rápidos, amables y siempre dispuestos 
+                    a ayudar con cualquier consulta. Hacen que cada compra 
+                    sea una experiencia agradable."
+                </p>
+                <p class="cliente"> - Rosa T.</p>
+            </div>
+
+            <!---Cliente 2 -->
+            <div class="box">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="user">
+                    <a class="fa-regular fa-user"></a>
+                </div>
+                <p>"Los productos de Dulce Encanto no solo son deliciosos, sino 
+                    que la presentación es impecable. Son perfectos para cualquier 
+                    ocasión, ya sea para disfrutar en casa o para regalar."
+                </p>
+                <p class="cliente"> - Valeria S.</p>
+            </div>
+
+            <!---Cliente 3 -->
+            <div class="box">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="user">
+                    <a class="fa-regular fa-user"></a>
+                </div>
+                <p>"La variedad y calidad de los postres es impresionante. Se nota que cada 
+                    producto está hecho con dedicación y los ingredientes más frescos. 
+                    ¡Mi pastelería favorita sin duda!" 
+                </p>
+                <p class="cliente"> - Martín C.</p>
+            </div>
+        </div>
+    </section>
+
+    <!--Contacto -->
+    <section class="contacto" id="contacto">
+
+        <h1 class="heading"> Contáctanos</h1>
+        
+        <div class="row">
+
+            <form action="">
+                <label for="nombre">Nombre y Apellido</label>
+                <input type="text"  id="nombre"  placeholder="abc"  class="box" required>
+        
+                <label for="correo">Correo Electrónico</label>
+                <input type="email"  id="correo"  placeholder="abc@gmail.com" class="box" required>
+        
+                <label for="celular">Celular</label>
+                <input type="text"  id="telefono" placeholder="999 999 999" class="box" required>
+        
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" class="box" laceholder="Hola..." cols="30" rows="10" required></textarea>
+        
+                <button id="enviar"  type="submit">Enviar</button>
+            </form>
+            <div class="image">
+                <img src="img/confectioner-uniform-decorates-cake.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    
+    <hr> 
+
+    <!---Footer -->
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h2>Dulce Encanto</h2>
+                <p>La dulzura que mereces, directo a tu puerta.</p>
+                <div class="share">
+                    <a href="#" class="fa-brands fa-facebook"></a>
+                    <a href="#" class="fa-brands fa-instagram"></a>
+                    <a href="#" class="fa-brands fa-whatsapp"></a>
+                    <a href="#" class="fa-brands fa-tiktok"></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <h3>Información de contacto</h3>
+                <a href="#" class="links"> <i class="fa-solid fa-phone"></i> (01) 265-2441</a>             
+                <a href="#" class="links"> <i class="fa-solid fa-phone"></i> (51) 923-456-678</a>   
+                <a href="#" class="links"> <i class="fa-solid fa-envelope"></i>  dulcencanto@gmail.com</a>   
+            </div>
+
+            <div class="box">
+                <h3>Links de interés</h3>
+                <a href="#home" class="links"> <i class="fa-solid fa-paperclip"></i> Home</a>
+                <a href="#nosotros" class="links"> <i class="fa-solid fa-paperclip"></i> Nosotros</a>
+                <a href="#productos" class="links"> <i class="fa-solid fa-paperclip"></i> Productos</a>
+                <a href="#contacto" class="links"> <i class="fa-solid fa-paperclip"></i> Contacto</a>
+                <a href="#" class="links"> <i class="fa-solid fa-paperclip"></i> Libro de Reclamaciones</a>
+                <a href="#" class="links"> <i class="fa-solid fa-paperclip"></i> Términos y Condiciones</a>
+                <a href="#" class="links"> <i class="fa-solid fa-paperclip"></i> Servicio al Cliente</a>
+                <a href="img/Dashboard.png" class="links"> <i class="fa-solid fa-paperclip"></i> Estadísticas </a>
+            </div>
+
+            <div class="box">
+                <h3>Medios de pago</h3>
+                <a class="pago"> <i class="fa-brands fa-cc-visa"></i></a>
+                <a class="pago"> <i class="fa-brands fa-cc-mastercard"></i></a>
+                <a class="pago"> <i class="fa-brands fa-cc-paypal"></i></a>
+            </div>
+        </div>
+        <div class="credit">&copy; 2024 Dulce Encanto. Todos los derechos reservados.</div>
+    </section>
+ 
+    <!--Loader
+     <section class="loader-container">
+        <img src="img/gif2.gif" alt="">
+    </section>
+    -->
+
+
+    <!-- JavaScript code -->
+    <!--<script src="js/script.js"></script>-->
+    <!-- Script para síntesis de voz -->
+    <script>
+
+        let menu = document.querySelector('.fas.fa-bars');
+        let navbar = document.querySelector('.navbar');
+
+        window.onscroll = () => {
+            menu.classList.remove('fa-times');
+            navbar.classList.remove('active');
+        };
+
+        // Activar el formulario de búsqueda
+        document.querySelector('#search-icon').onclick = () => {
+            document.querySelector('#search-form').classList.toggle('active');
+        };
+
+        // Cerrar el formulario de búsqueda
+        document.querySelector('#close').onclick = () => {
+            document.querySelector('#search-form').classList.remove('active');
+        };
+
+
+        /*<ctivar carrito*/
+        const cartIcon = document.querySelector('.fas.fa-shopping-cart');
+        const shoppingCart = document.querySelector('.shopping-cart');
+
+        cartIcon.addEventListener('click', () => {
+            shoppingCart.style.display = shoppingCart.style.display === 'block' ? 'none' : 'block';
+        });
+
+        /*activar inicio sesion*/
+        let loginForm = document.querySelector('.login-form');
+
+        document.querySelector('#login-btn').onclick = () =>{
+            loginForm.classList.toggle('active');
+        }
+
+        function addToCart(product) {
+            let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+            // Agrega el producto al carrito
+            cart.push(product);
+            localStorage.setItem("cart", JSON.stringify(cart));
+
+            alert("Producto agregado al carrito");
+            displayCart(); // Llama a displayCart para actualizar el carrito inmediatamente
+        }
+
+        function displayCart() {
+            const cartContainer = document.querySelector(".shopping-cart");
+            let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+            // Limpia el contenido del carrito antes de actualizar
+            cartContainer.innerHTML = `
+                <h2>Carrito de Compra</h2>
+                <hr class="divider">
+            `;
+
+            let total = 0;
+
+            cart.forEach(item => {
+                total += item.price;
+
+                // Agrega cada producto en el HTML
+                cartContainer.innerHTML += `
+                    <div class="box">
+                        <i class="fas fa-trash" onclick="removeFromCart(${item.id})"></i>
+                        <img src="${item.image}" alt="${item.name}" width="111" height="106">
+                        <div class="content">
+                            <h3>${item.name}</h3>
+                            <span class="price">S/${item.price.toFixed(2)}</span>
+                            <span class="quantity">cantidad: 1</span>
+                        </div>
+                    </div>
+                `;
+            });
+
+            // Muestra el total
+            cartContainer.innerHTML += `
+                <div class="total">Total : S/${total.toFixed(2)}</div>
+                <div class="button-container">
+                    <a href="carrito.html" class="btn">Ver Carrito</a>
+                    <a href="checkout.html" class="btn">Checkout</a>
+                </div>
+            `;
+        }
+
+
+        function removeFromCart(productId) {
+            let cart = JSON.parse(localStorage.getItem("cart")) || [];
+            cart = cart.filter(item => item.id !== productId);
+            localStorage.setItem("cart", JSON.stringify(cart));
+            displayCart(); // Actualizar la vista del carrito
+        }
+
+        document.addEventListener("DOMContentLoaded", displayCart);
+
+        // Función para leer texto en voz alta
+        function speakText(text) {
+        var utterance = new SpeechSynthesisUtterance(text);
+        window.speechSynthesis.speak(utterance);
+        }
+
+        let hasWelcomed = false; // Para controlar si el mensaje de bienvenida ya fue dado
+        
+        document.addEventListener ('keydown', function(event){
+            if(!hasWelcomed){
+                speakText('Bienvenido a Dulce Encanto. Si desea Activar la lectura en voz alta presione la tecla f, Si deesea desactivarla presione la tecla asterisco');
+                hasWelcomed = true;
+            }
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+        var elements = document.querySelectorAll('.box, .beneficio-item, .heading, .content, .navbar ,#nombre, #correo, #telefono, #mensaje, #enviar, #search-icon, #login-btn, #log, #fav, #carr');
+        var isReadingEnabled = false;
+    
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'f') {
+            isReadingEnabled = true;
+            speakText('Lectura activada. Pase el cursor sobre los elementos para escuchar. Si desea desactivar está opción presione la tecla asterisco');
+            console.log('Lectura activada. Pase el cursor sobre los elementos para escuchar.');
+            } else if (event.key === '*') {
+            isReadingEnabled = false;
+            console.log('Lectura desactivada.');
+            speakText('Lectura desactivada.');
+
+            }
+        });
+    
+        elements.forEach(function(element) {
+            element.addEventListener('mouseover', function() {
+            if (isReadingEnabled) {
+                var labelText = '';
+                if (this.id === 'nombre') {
+                labelText = 'Nombre';
+                } else if (this.id === 'correo') {
+                labelText = 'Correo electrónico';
+                } else if (this.id === 'telefono') {
+                labelText = 'Teléfono';
+                } else if (this.id === 'mensaje') {
+                labelText = 'Mensaje';
+                } else if (this.id === 'enviar') {
+                labelText = 'Enviar';
+                } else if (this.id === 'log') {
+                labelText = 'Dulce Encanto';
+                } else if (this.id === 'search-icon') {
+                labelText = 'Buscar productos';
+                } else if (this.id === 'login-btn') {
+                labelText = 'Iniciar Sesión';
+                } else if (this.id === 'fav') {
+                labelText = 'Lista de Favoritos';
+                } else if (this.id === 'carr') {
+                labelText = 'Carrito de Compras';
+                } else {
+                labelText = this.textContent.trim();
+                }
+                speakText(labelText);
+            }
+            });
+        });
+        });
+    </script>
+</body>
+</html>

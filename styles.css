@@ -1,0 +1,1407 @@
+:root{
+    --pink:#F195B2;
+}
+
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+    height: 100%;
+    margin: 0;
+}
+
+body{
+    height: 100%;
+    margin: 0;
+}
+
+section{
+    padding: 2rem 9%;
+}
+
+.heading{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 3.5rem;
+    color: var(--pink);
+    padding: 1rem;
+    margin: 2rem 0;
+    background: rgb(255, 51, 153, .05);
+    text-transform: none;
+}
+
+
+header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: #fff;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+header .logo{
+    font-family: 'Great Vibes', serif;
+    font-size: 4rem;
+    color: var(--pink); 
+    font-weight: normal;
+    text-decoration: none;
+}
+
+/*
+header .logo span{
+    color: var(--pink);
+}
+*/
+
+header .navbar a{
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 0 1.5rem;
+    color: #666;
+}
+
+header .navbar a:hover{
+    color: var(--pink);
+}
+
+header .icons a{
+    text-decoration: none;
+    font-size: 2.2rem;
+    color:#333;
+    margin-left: 1rem;
+}
+
+header .icons a:hover{
+    color: var(--pink);
+}
+
+header #toggler{
+    display: none;
+}
+
+header .fa-bars{
+    font-size: 3rem;
+    color: #333;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    cursor: pointer;
+    border:.1rem solid rgba(0,0,0,.3);
+    display: none;
+}
+
+/* buscar */
+
+#search-form{
+    position: fixed;
+    top: -110%; left: 0;
+    height: 100%; width: 100%;
+    z-index: 1004;
+    background: rgba(0,0,0,.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+}
+
+#search-form.active{
+    top: 0;
+}
+
+#search-form #search-box{
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;   
+    width: 50rem;
+    border-bottom: .1rem solid #fff;
+    padding: 1rem 0;
+    color: #fff;
+    font-size: 2.5rem;
+    text-transform: none;
+    background: none;
+}
+
+#search-form #search-box::placeholder{
+    color: #eee;
+}
+
+#search-form #search-box::-webkit-search-cancel-button{
+    -webkit-appearance: none;
+}
+
+#search-form label{
+    color: #fff;
+    cursor: pointer;
+    font-size: 3rem;
+}
+
+#search-form label:hover{
+    color:var(--pink);
+}
+
+#search-form #close{
+    position: absolute;
+    color: #fff;
+    cursor: pointer;
+    top: 2rem; right: 3rem;
+    font-size: 4rem;
+}
+
+
+/*home*/
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Ocupa toda la altura del viewport */
+    background: url(../Dulce_Encanto/img/Pasteles.png) no-repeat center center;
+    background-size: cover; /* Mantén esta opción para ocupar todo el espacio sin deformar */
+    width: 100%;
+    margin-top: 10rem;
+    height: 1000px;
+}
+
+/*nosotros*/
+
+.nosotros .row{
+    display: flex;
+    align-items: center;
+    gap: 1rem; /*2rem*/
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+}
+
+.nosotros .row .img-nosotros{
+    flex: 1;
+    position: relative;
+    justify-content: center;
+}
+
+.nosotros .row .img-nosotros img{
+    max-width: 100%;
+}
+
+.nosotros .row .content{
+    flex: 1 1 40rem;   
+    text-align: justify; /* Justifica el texto */
+    margin: 0 auto;
+}
+
+.nosotros .row .content p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    color: #999;
+    padding: .5rem 0;
+    padding-top: 1rem;
+    list-style: 1.5;
+    line-height: 1.5; /* Mejora el espaciado entre líneas */
+    text-transform: none;
+}
+
+/*beneficios*/
+
+.beneficios {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 20px 0;
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    flex-wrap: wrap;
+}
+
+.beneficio-item {
+    text-align: center;
+    color: #333;
+    flex: 1; /* Da el mismo tamaño a cada beneficio */
+    min-width: 150px; /* Tamaño mínimo para que cada ítem se mantenga legible en pantallas pequeñas */
+    margin: 10px;
+}
+
+.beneficio-item i {
+    font-size: 36px;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.beneficio-item h4 {
+    font-family: Poppins;
+    font-size: 18px;
+    margin: 5px 0;
+    font-weight: bold;
+    text-transform: none;
+}
+
+.beneficio-item p {
+    font-family: Poppins;
+    font-size: 14px;
+    color: #777;
+    text-transform: none;
+}
+
+
+/*Nuestros Productos*/
+.productos .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center; 
+}
+
+.productos .box-container .box{
+    flex: 1 1 30rem;
+    max-width: 300px;
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+    border-radius: .5rem;
+    border: .1rem solid rgba(0,0,0,.1);
+    position: relative;
+}
+
+.productos .box-container .box .discount{
+    position: absolute;
+    top: 1rem; left: 1rem; /*etiqueta de descuento*/
+    padding: .5rem 1rem; /*revisar .7rem 2rem*/
+    font-size: 1.8rem;
+    color: white;
+    background: var(--pink);
+    z-index: 1;
+    border-radius: .5rem;
+}
+
+.productos .box-container .box .new{
+    position: absolute;
+    top: 1rem; left: 1rem;
+    padding: .5rem 1rem;
+    font-size: 1.8rem;
+    color: white;
+    background: rgba(104, 206, 182, 1);
+    z-index: 1;
+    border-radius: .5rem;
+}
+
+.productos .box-container .box .image{
+    position: relative;
+    text-align: center;
+    padding-top: 2rem;
+    overflow: hidden;
+}
+
+.productos .box-container .box .image img{
+    height: 35rem; /*revisar 25 - 35rem*/
+}
+
+.productos .box-container .box:hover .image img{
+    transform: scale(1.1);
+}
+
+.productos .box-container .box .image .icons{
+    position: absolute;
+    bottom: -7rem; left: 0; right: 0; /*revisar -7rem*/
+    display: flex;
+}
+
+.productos .box-container .box:hover .image .icons{
+    bottom: 0;
+}
+
+.productos .box-container .box .image .icons a{
+    height: 4.8rem;
+    line-height: 4.8rem;
+    font-size: 1.5rem;
+    width: 50%;
+    background: var(--pink);
+    color: white;
+    text-decoration: none;
+}
+
+.productos .box-container .box .image .cart-btn{
+    border-left: .1rem solid #fff7;
+    border-right: .1rem solid #fff7;
+    width: 100%;
+}
+
+.productos .box-container .box .image .icons a:hover{
+    background: #6d6d6d;
+}
+
+.productos .box-container .box .content{
+    font-family: 'Poppins';
+    padding: 2rem;
+    text-align: center;
+    text-transform: none;
+}
+
+.productos .box-container .box .content h3{
+    font-family: 'Poppins';
+    font-size: 2rem;
+    color: #333333;
+    text-transform: none;
+}
+
+.productos .box-container .box .content .price{
+    font-family: 'Poppins';
+    font-size: 2rem;
+    color: var(--pink);
+    font-weight: bolder;
+    padding-top: 1rem;
+    text-transform: none;
+}
+
+.productos .box-container .box .content .price span{
+    font-family: 'Poppins';
+    font-size: 1.5rem;
+    color: #999;
+    font-weight: lighter;
+    text-decoration: line-through;
+    text-transform: none;
+}
+
+
+/*Review*/
+
+.review .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.review .box-container .box{
+    flex: 1 1 30rem;
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+    border-radius: .5rem;
+    padding: 3rem 2rem;
+    position: relative;
+    border: .1rem solid rgba(0,0,0,.1);
+    max-width: 400px;
+}
+
+.review .box-container .box .stars i{
+    color: var(--pink);
+    font-size: 2rem;
+}
+
+.review .box-container .box p{
+    font-family: 'Poppins';
+    color: #999;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    padding-top: 2rem;
+    text-align: center;
+    text-transform: none;
+}
+
+.review .box-container .box .cliente{
+    font-family: 'Poppins';
+    color: #333333;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    padding-top: 2rem;
+    text-transform: none;
+}
+
+.review .box-container .box .user{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    padding-top: 2rem;
+}
+
+.review .box-container .box .user a{
+    color: #9DE9F5; 
+    font-size: 9rem; /*tamaño del icono*/
+}
+
+/*Contacto*/
+.contacto .row {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    gap: 1.5rem;
+    align-items: center;
+}
+  
+.contacto .row form {
+    flex: 1 1 40rem;
+    padding: 2rem 2.5rem;
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+    border: .1rem solid rgba(0,0,0,.1);
+    background: #fff;
+    border-radius: .5rem; 
+}
+
+.contacto .row .image{
+    flex: 1 1 40rem;
+}
+
+.contacto .row .image img{
+    width: 100%;
+    height: auto; /* Mantiene la proporción */
+    max-height: 500px; /* Ajusta este valor según el tamaño que prefieras */
+    object-fit: cover;
+    border-radius: .5rem;
+}
+
+.row label {
+    font-family: 'Poppins';
+    font-size: 1.3rem;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+.row input,
+.row textarea {
+    font-family: 'Poppins';
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    width: 100%;
+    text-transform: none;
+    margin: .7rem 0;
+  }
+  
+.row input:focus,
+.row textarea:focus {
+    border-color: var(--pink);
+    outline: none;
+}
+  
+.row button {
+    font-family: 'Poppins';
+    background-color: var(--pink);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.3rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+.formulario-contacto button:hover {
+    background-color: #f05f8d;
+}
+
+/*footer*/
+.footer{
+    background: #fff;
+}
+
+.footer .box-container{
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 4rem;
+}
+
+.footer .box-container .box h3{
+    font-family: 'Poppins';
+    text-transform: none;
+    font-size: 1.5rem;
+    color: #333;
+    padding: 1rem 0;
+}
+
+.footer .box-container .box h2{
+    font-family: 'Great Vibes';
+    text-transform: none;
+    font-size: 2.8rem;
+    color: #333;
+    padding: 1rem 0;
+}
+
+.footer .box-container .box h3 i{
+    color: var(--pink);
+    text-decoration: none;
+}
+
+.footer .box-container .box .links{
+    font-family: 'Poppins';
+    text-transform: none;
+    text-decoration: none;
+    display: block;
+    font-size: 1.5rem;
+    color: #666;;
+    padding: 1rem 0;
+}
+
+.footer .box-container .box .links i{
+    text-transform: none;
+    color: var(--pink);
+    padding-right: .5rem;
+}
+
+.footer .box-container .box .links:hover i{
+    padding-right: 1rem;
+}
+
+.footer .box-container .box p{
+    font-family: 'Poppins';
+    text-transform: none;
+    line-height: 1.8;
+    display: block;
+    font-size: 1.5rem;
+    color: #666;;
+    padding: 1rem 0;
+}
+
+.footer .box-container .box .share a{
+    height: 4rem;
+    width: 4rem;
+    line-height: 4rem;
+    border-radius: .5rem;
+    font-size: 2rem;
+    color: var(--pink);
+    margin-left: .2rem;
+    text-align: center;
+    background: #eee;
+    text-decoration: none;
+}
+
+.footer .box-container .box .share a:hover{
+   background: #919191;
+   color: #fff;
+}
+
+.footer .box-container .box .pago i{
+    height: 5rem;
+    width: 5rem;
+    line-height: 4rem;
+    font-size: 3rem;
+    color: var(--pink);
+}
+
+.footer .credit{
+    font-family: 'Poppins';
+    text-transform: none;
+    text-align: center;
+    margin-top: 1.5rem;
+    padding: 1.5rem;
+    padding-top: 2.5rem;
+    font-size: 1.4rem;
+    color: #333;
+    border-top: .1rem solid rgba(0,0,0,.1);
+}
+
+
+/*
+.loader-container{
+    position: fixed;
+    top: 0; left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 10000;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: opacity 1s ease;
+}
+
+.loader-container img{
+    width: 45rem;
+}
+
+.loader-container.fade-out{
+    opacity:0;
+}
+*/
+
+/* Carrito */
+.shopping-cart h2 {
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none; 
+    text-transform: none;
+    font-size: 1.7rem;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Divider */
+.divider {
+    border: none;
+    height: 1px;
+    background-color: #e0e0e0;
+    margin-bottom: 20px;
+}
+
+
+.shopping-cart {
+    position: absolute;
+    padding: 1rem;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    width: 30rem;
+    background: #fff;
+    display: none; /* Hidden by default */
+    max-height: 80vh; /* Limits height to 80% of viewport */
+    overflow-y: auto;
+    top: 110%; /* Ajusta este valor según la altura de tu header */
+    right: 20px;
+    z-index: 5;
+}
+
+.icons .fas.fa-shopping-cart:hover + .shopping-cart {
+    display: block; /* Show when hovering over the cart icon */
+}
+
+.shopping-cart .box {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    position: relative;
+    margin: 1rem 0;
+    padding: 5px 0; 
+}
+
+.shopping-cart .box img {
+    width: 70px;
+    height: 70px;
+    border-radius: 8px;
+    margin-right: 8px; /* margen entre el la imagen del producto y el titulo */
+}
+
+.shopping-cart .box .fa-trash {
+    font-size: 1.5rem;
+    position: absolute;
+    top: 50%; right: 2rem;
+    cursor: pointer;
+    color: #666;
+    transform: translateY(-50%);
+}
+
+.shopping-cart .box .fa-trash:hover {
+    color: var(--pink);
+}
+
+.shopping-cart .box .content h3{
+    font-family: 'Poppins', sans-serif;
+    text-transform: none;
+    color:#333;
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+.shopping-cart .box .content .price{
+    font-family: 'Poppins', sans-serif;
+    text-transform: none;
+    color: var(--pink);
+    font-size: 1.3rem;
+    padding-bottom: 1rem;
+}
+
+.shopping-cart .box .content .quantity{
+    font-family: 'Poppins', sans-serif;
+    text-transform: none;
+    color: #666;
+    font-size: 1.3rem;
+    padding-bottom: 1rem;
+}
+
+.shopping-cart .total{
+    font-family: 'Poppins', sans-serif;
+    text-transform: none;
+    color: #333;
+    text-align: center;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+
+/* Estilo para el contenedor de los botones */
+.button-container {
+    display: flex;
+    justify-content: center; /* Centra los botones horizontalmente */
+    gap: 1rem; /* Espacio entre los botones */
+    margin-top: 1rem; /* Espacio superior */
+}
+
+.shopping-cart .btn { 
+    font-family: 'Poppins', sans-serif;
+    text-transform: none;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border: 1px solid #333;
+    border-radius: 20px;
+    background-color: #fff;
+    cursor: pointer;
+    color: #333;
+    width: 45%; /* Ajusta el ancho según sea necesario */
+    text-align: center;
+}
+
+.shopping-cart .btn:hover {
+    color: var(--pink);
+    border-color: var(--pink);
+}
+
+
+/*iniciar sesion*/
+.login-form{
+    position:absolute;
+    top:110%; right: -110%;
+    width: 30rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    padding: 2rem;
+    border-radius: .5rem;
+    background: #fff;
+    text-align: center;
+}
+
+.login-form.active{
+    right: 2rem;
+    transition: .4s linear;
+}
+
+.login-form h3{
+    font-family: 'Poppins', sans-serif;
+    text-transform: none;
+    font-size: 2rem;
+    color: #000 ;
+}
+
+.login-form .box{
+    width: 100%;
+    margin: .7rem 0;
+    background: #eee;
+    border-radius: .5rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: #000;
+    text-transform: none;
+}
+
+.login-form p{
+    font-family: 'Poppins', sans-serif;
+    text-transform: none;
+    font-size: 1.3rem;
+    padding: .1rem 0;
+    color: #666;
+}
+
+.login-form p a{
+    font-family: 'Poppins', sans-serif;
+    text-transform: none;
+    color: var(--pink);
+}
+
+.login-form .btn{
+    font-family: 'Poppins', sans-serif;
+    margin: 0; /* Elimina el margen para que el botón ocupe todo el ancho */
+    display: block; /* Cambia a block para que el botón se comporte como un bloque */
+    width: 100%; /* Hace que el botón ocupe el 100% del ancho del contenedor */
+    padding: .8rem 0; /* Ajusta el padding si es necesario */
+    font-size: 1.4rem;
+    border-radius: .5rem;
+    border: .2rem solid #000;
+    color: #333;
+    cursor: pointer;
+}
+
+.container{
+    display: flex;
+    width: 100%; 
+    text-align: center;
+}
+
+.login-form .btn:hover{
+   background-color: var(--pink);
+   color: #fff;
+}
+
+/*PAGINA 2*/
+
+.container-home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh; /* Ocupa toda la altura del viewport */
+    background: url(../Dulce_Encanto/img/girls-hands-are-holding-cheesecake-made-berries-matcha-tea\ 1.png) no-repeat center center;
+    background-size: cover; /* Mantén esta opción para ocupar todo el espacio sin deformar */
+    width: 100%;
+    margin-top: 10rem;
+    height: 200px;
+}
+
+.container-home h1 {
+    font-family: 'Poppins', sans-serif; /* Cambia 'Poppins' a la fuente que elijas */
+    font-size: 4rem; /* Tamaño de la fuente */
+    font-weight: 700; /* Grosor de la fuente */
+    color: #000; /* Color rosado o el color que prefieras */
+    letter-spacing: 1px; /* Espaciado entre letras */
+}
+
+
+.container-home h1 {
+    font-family: 'Poppins', sans-serif; /* Cambia 'Poppins' a la fuente que elijas */
+    font-size: 4rem; /* Tamaño de la fuente */
+    font-weight: 700; /* Grosor de la fuente */
+    color: #000; /* Color rosado o el color que prefieras */
+    letter-spacing: 1px; /* Espaciado entre letras */
+}
+
+.container-home a {
+    font-family: 'Poppins', sans-serif; /* Cambia 'Poppins' a la fuente que elijas */
+    font-size: 1.5rem; /* Tamaño de la fuente */
+    font-weight: 400; /* Grosor de la fuente */
+    color: #000; /* Color rosado o el color que prefieras */
+}
+
+.container-home span {
+    font-family: 'Poppins', sans-serif; /* Cambia 'Poppins' a la fuente que elijas */
+    font-size: 1.5rem; /* Tamaño de la fuente */
+    font-weight: 250; /* Grosor de la fuente */
+    color: #000; /* Color rosado o el color que prefieras */
+}
+
+
+.breadcrumbs a {
+    color: #333;
+    text-decoration: none;
+}
+
+.breadcrumbs a:hover {
+    color: var(--pink); /* Color rosado oscuro */
+}
+
+.breadcrumbs a::after {
+    content: '>';
+    margin: 0 5px;
+    color: #333; /* Puedes ajustar el color según el diseño */
+}
+
+/*.breadcrumbs a:last-child::after {
+    content: ''; /* Remueve el símbolo del último enlace 
+}*/
+
+
+/* filtro productos*/
+
+/*.filter-button {
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    background-color: #ccc;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s;
+}
+
+.filter-button:hover {
+    background-color: var(--pink); /* Cambia el color de fondo al hacer hover 
+}*/
+
+
+#filtro a{
+    font-family: 'Poppins', sans-serif;
+    text-transform: none;
+    text-decoration: none;
+    font-size: 18px;
+    color: #333;  
+    margin-right: 10px;
+}
+
+.filter-dropdown {
+    font-family: 'Poppins', sans-serif;
+    text-transform: none;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 20px;
+    width: 20%;
+}
+
+.results-info {
+    font-family: 'Poppins', sans-serif;
+    text-transform: none;
+    font-size: 18px;
+    color: #333;
+    margin-left: 10px;
+}
+
+#productContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.product {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.product:hover {
+    transform: scale(1.05); /* Agrega un pequeño zoom al pasar el mouse */
+}
+
+.filter-section {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+/* paginacion */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.page-button {
+    background-color: #333;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.page-button:hover {
+    background-color: #555;
+}
+
+
+
+/*carritooooooooo*/
+#cart table{
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+}
+
+#cart table td:nth-child(1){
+    width: 100px;
+    text-align: center;
+}
+
+#cart table td:nth-child(2){
+    width: 150px;
+    text-align: center;
+}
+
+#cart table td:nth-child(3){
+    width: 250px;
+    text-align: center;
+}
+
+#cart table td:nth-child(4),
+#cart table td:nth-child(5),
+#cart table td:nth-child(6){
+    width: 150px;
+    text-align: center;
+}
+
+#cart table td:nth-child(5) input{
+    width: 70px;
+    padding: 10px 5px 10px 15px;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 20px;
+    text-align: center;
+    vertical-align: middle;
+    border-bottom: 1px solid #ddd; /* Borde inferior sutil */
+}
+
+table thead {
+    background-color: #FDE0E9; /* Color claro para el encabezado */
+}
+
+table tbody img {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+table th {
+    font-size: 17px;
+    font-weight: bold;
+    color: #333;
+}
+
+table td {
+    font-size: 15px;
+    color: #555;
+}
+
+table td .fa-trash{
+    font-size: 15px;
+    color: var(--pink);
+}
+
+table td .fa-trash:hover{
+    color: #777;
+}
+
+#cart table thead td{
+    font-weight: 700;
+    padding: 18px;
+}
+
+#cart-add{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#cupon{
+    width: 40%;
+    margin-bottom: 30px;
+}
+
+#cupon h3{
+    font-family: 'Poppins', sans-serif;
+    text-transform: none;
+    font-size: 2rem;
+    padding-bottom: 15px;
+    color: #919191;
+}
+
+#cupon input{
+    padding: 10px 20px;
+    outline: none;
+    width: 60%;
+    margin-right:10px;
+    border: 1px solid rgba(0,0,0,.1);
+    border-radius: 5px;
+}
+
+#cupon button{
+    background-color: var(--pink);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.3rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#cupon button:hover{
+    background-color: #eb5685;
+}
+
+#subtotal{
+    width: 30%;
+    margin-bottom: 30px;
+    padding: 30px;
+    background-color: #FDE0E9;  
+}
+
+#subtotal table{
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#subtotal table td{
+    width: 50%;
+    padding: 10px;
+    font-size: 16px;
+    text-align: left;
+    color: #333;
+}
+
+#subtotal h3{
+    font-family: 'Poppins', sans-serif;
+    text-transform: none;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.5rem;
+    padding-bottom: 15px;
+    color: #333;
+}
+
+#subtotal button{
+    font-family: 'Poppins', sans-serif;
+    text-transform: none;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border: 1px solid #333;
+    border-radius: 20px;
+    background-color: transparent;
+    cursor: pointer;
+    color: #333;
+    width: 50%; /* Ajusta el ancho según sea necesario */
+    text-align: center;
+}
+
+#subtotal button:hover {
+    color: var(--pink);
+    border-color: var(--pink);
+}
+
+
+
+
+/* media queries */
+@media (max-width:991px) {
+    
+    html{
+        font-size: 55%; 
+    }
+    header{
+        padding: 3rem;
+    }
+
+    header .logo {
+        font-size: 4rem; /* Reduce el tamaño del logo */
+    }
+    header .icon {
+        font-size: 1rem;
+        margin: 0 0.8rem;
+    }
+    section{
+        padding: 2rem;
+    }
+    .home{
+        background-size: cover; /*cover para adaptarse mejor en tablets */
+        background-attachment: scroll; 
+        height: calc(100vh - 4rem); /* Ajusta el alto */
+        padding-top: 4rem;
+    }
+
+    .nosotros .row {
+        flex-direction: column; /* Cambia la dirección a columna */
+        text-align: center;     /* Centra el texto */
+    }
+
+    .nosotros .row .img-nosotros, 
+    .nosotros .row .content {
+        flex: 1 1 100%; /* La imagen y el texto ocupan el 100% del ancho */
+    }
+
+    .nosotros .row .img-nosotros img {
+        max-width: 80%; /* Ajusta la imagen para que sea más pequeña en móviles */
+        margin: 0 auto; /* Centra la imagen */
+    }
+
+    .nosotros .row .content p {
+        font-size: 1.6rem; /* Ajusta el tamaño del texto en pantallas más pequeñas */
+    }
+}
+
+@media (max-width:1184px){
+    header .fa-bars{
+        display: block;
+        font-size: 1.8rem; /* Tamaño del ícono de menú */
+        cursor: pointer;
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        background: #eee;
+        border-top: .1rem solid rgba(0,0,0,.1);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        transition: clip-path 0.3s ease;
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        opacity: 0;
+    }
+
+    header #toggler:checked ~ .navbar{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        opacity: 1;
+    }
+
+    header .navbar a{
+        margin: 1rem;
+        padding: 2.5rem;
+        background: #fff;
+        border: .1rem solid rgba(0,0,0,.1);
+        display: block;
+        width: 100%; 
+        text-align: center; 
+        transition: background-color 0.3s ease; 
+    }
+
+    header .navbar a:hover {
+        background-color: #f2f2f2; 
+    }
+
+    header .navbar a{
+        font-size: 2rem;
+    }
+    .home {
+        background-size: cover;
+        background-position: center top; /* Mejor posición si la parte superior no es crítica */
+        height: 60vh; /* Puedes probar con 60vh si prefieres más espacio */
+        padding-top: 1.5rem;
+    }
+}
+
+@media (max-width:450px) {
+    
+    html{
+        font-size: 50%;
+    }
+
+    header .logo {
+        font-size: 3rem; /* Tamaño más reducido en celulares */
+    }
+
+    header .icon {
+        font-size: 0.8rem;
+        margin: 0 0.4rem;
+    }
+    .home{
+        background-size: cover;
+        background-position: top;
+        height: 50vh;
+        padding-top: 2rem;
+    }
+    .heading{
+        font-size: 3rem;
+    }
+
+    .nosotros .row .img-nosotros img {
+        max-width: 100%; /* Imagen ocupa todo el ancho en pantallas muy pequeñas */
+    }
+
+    .nosotros .row .content p {
+        font-size: 1.4rem; /* Reduce el tamaño del texto para pantallas muy pequeñas */
+    }
+
+    /* seccion beneficios */
+    .beneficios {
+        flex-direction: column; /* Cambia el layout a columna */
+        align-items: center;
+    }
+
+    .beneficio-item {
+        width: 80%; /* Asegura que cada ítem ocupe el 80% del ancho en pantallas pequeñas */
+        max-width: 300px; /* Limita el ancho máximo en pantallas pequeñas */
+        margin: 15px 0; /* Espacio entre los elementos en columna */
+    }
+
+    .beneficio-item i {
+        font-size: 30px; /* Ajusta el tamaño del icono para pantallas pequeñas */
+    }
+
+    .beneficio-item h4 {
+        font-size: 16px; /* Ajusta el tamaño del título */
+    }
+
+    .beneficio-item p {
+        font-size: 13px; /* Ajusta el tamaño del texto */
+    }
+    
+
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .footer .box-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        width: 100%;
+    }
+
+    .footer .box-container .box h2, 
+    .footer .box-container .box h3 {
+        font-size: 1.8rem;
+        margin: 0.5rem 0;
+    }
+
+    .footer .box-container .box .links {
+        font-size: 1.4rem;
+        padding: 0.5rem 0;
+    }
+
+    /* Configuración para íconos sociales */
+    .footer .box-container .box .share {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .footer .box-container .box .share a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.6rem;
+        height: 3rem;
+        width: 3rem;
+        background-color: #f5f5f5;
+        border-radius: 50%;
+    }
+
+    /* Configuración para métodos de pago */
+    .footer .box-container .box .pago {
+        display: flex;
+        gap: 1rem;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .footer .box-container .box .pago i {
+        font-size: 2rem;
+        height: 3rem;
+        width: 3rem;
+        background-color: #f5f5f5;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Ajuste del texto de créditos */
+    .footer .credit {
+        font-size: 1.2rem;
+        padding: 1rem;
+        width: 100%;
+        text-align: center;
+    }
+    
+}
+
